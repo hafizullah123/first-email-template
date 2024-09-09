@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .email-container {
+        max-width: 600px;
+        margin: 30px auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Header Style with Overlay Text */
+      .email-header {
+        position: relative;
+      }
+
+      .email-header img {
+        max-width: 100%;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-align: center;
+      }
+
+      /* Title and Boxed Paragraph Style */
+      .email-body {
+        padding: 20px;
+      }
+
+      .email-title {
+        font-size: 28px;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        text-align: left;
+      }
+
+      .email-content-box {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .email-content {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.8;
+        text-align: justify;
+      }
+
+      /* CTA Button */
+      .email-cta {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .email-button {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #007bff;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      /* Footer Section */
+      .email-footer {
+        font-size: 14px;
+        color: #888;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+        margin-top: 40px;
+        text-align: center;
+        line-height: 1.6;
+      }
+
+      /* Social Media Icons */
+      .social-icons {
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      .social-icons a {
+        margin: 0 10px;
+        text-decoration: none;
+      }
+
+      .social-icons img {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+      }
+
+      /* Responsive Design */
+      @media screen and (max-width: 600px) {
+        .email-container {
+          width: 100%;
+          padding: 10px;
+        }
+
+        .email-title {
+          font-size: 22px;
+        }
+
+        .email-content {
+          font-size: 14px;
+        }
+
+        .email-button {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+
+        .overlay-text {
+          font-size: 18px;
+          color: #1c1919;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="email-container">
+      <!-- Header Image with Overlay Text -->
+      <div class="email-header">
+        <img src="imag/w.png" alt="Email Header Image" />
+        <div class="overlay-text">Welcome to Our Newsletter</div>
+      </div>
+
+      <!-- Body Content -->
+      <div class="email-body">
+        <div class="email-title">Hello [Recipient's Name],</div>
+
+        <!-- Boxed Paragraph -->
+        <div class="email-content-box">
+          <div class="email-content">
+            I hope this message finds you well. I am reaching out to discuss
+            [brief purpose of the email]. <br /><br />
+            [Provide more details about the email content here, like context,
+            next steps, or required actions].<br /><br />
+            Please let me know if you need any additional information or if
+            there's a convenient time to discuss further. I look forward to your
+            response.
+          </div>
+        </div>
+
+        <!-- Call-to-Action Button -->
+        <div class="email-cta">
+          <a href="#" class="email-button">Call to Action</a>
+        </div>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="#"><img src="imag/download (3).png" alt="Facebook" /></a>
+        <a href="#"><img src="imag/download (2).png" alt="Twitter" /></a>
+        <a href="#"><img src="imag/download (4).png" alt="LinkedIn" /></a>
+      </div>
+
+      <!-- Footer -->
+      <div class="email-footer">
+        Best regards, <br />
+        [Your Full Name] <br />
+        [Your Job Title] <br />
+        [Your Company Name] <br />
+        [Your Contact Information]
+      </div>
+    </div>
+  </body>
+</html>
